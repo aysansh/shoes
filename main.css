@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: iransans;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@font-face {
+    font-family: "iransans";
+    src: url("./fonts/ir_sans.ttf");
+    src: url("./iransans/IRANSans\(FaNum\).ttf");
+}
+
+
+#mySearch {
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+    padding-right: 40px;
+    /* margin-bottom: 3px; */
+    opacity: 0.5;
+    font-size: 12px;
+    color: black;
+}
+
+.category {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.category:focus{
+background-color: #00C2FF;
+color: white;
+}
+.sign-up {
+    border: 3px solid #00C2FF;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 7px 22px;
+}
+
+.shop-cart {
+    background-color: #00C2FF;
+    border-radius: 10px;
+    padding: 12px;
+    margin-left: 10px;
+    color: white;
+}
+
+
+#back-blue {
+    background-image: linear-gradient(90deg,
+            hsl(194deg 92% 69%) 0%,
+            hsl(196deg 97% 63%) 57%,
+            hsl(194deg 100% 50%) 100%);
+    height: 600px;
+    margin-bottom: 4rem;
+    z-index: -10;
+}
+
+
+.best-price {
+    background: white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    color: #00C2FF;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 60px;
+    width: fit-content;
+    margin-right: 120px;
+}
+
+
+.square {
+    border: 3px solid #00C2FF;
+    height: 110px;
+    width: 110px;
+}
+
+.productbox {
+    border: 2px solid #e7e4e4;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.discount {
+    background: #FF9900;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    display: inline-block;
+    padding: 3px 12px;
+    position: absolute;
+    right: 38%;
+    font-weight: bold;
+}
+
+.sizing {
+    border: 1px solid #e7e4e4;
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+#uname {
+    border: 1px solid #e7e4e4;
+}
+
+
+/* footer style  */
+.footer-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+
+}
+
+
+.footerline {
+    /* opacity: 0.7; */
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 250%;
+    margin-top: 20px;
+font-weight: bold;
+}
+
+.dot {
+    color: #00C2FF;
+    font-size: 6px;
+    padding-right: 10px;
+}
+
+
+.send-btn{
+    border: none;
+    background: #00C2FF;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 40px;
+}
+
+#uname{
+    border: 1px solid #9e9d9d;
+    border-radius: 5px;
+    width: 75%;
+    height: 45px;
+}
+
+
+.product:hover {
+color: #00C2FF;
+}

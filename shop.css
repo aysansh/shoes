@@ -1,0 +1,46 @@
+.shop-card {
+    border: 2px solid #c7c4c4;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.sort:hover {
+
+    color: #FF9900;
+
+}
+
+.sizing-option {
+    border: 1px solid #b3b1b1;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.choice-option {
+    border-radius: 5px;
+    /* width: 32px; */
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/* pagination */
+
+.previous-next:hover {
+    background: #00C2FF;
+    color: #ccc;
+}
+
+.pagebox {
+    border: 2px solid #00C2FF;
+    border-radius: 7px;
+}

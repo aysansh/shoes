@@ -1,0 +1,1317 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+
+    <title>TOP SHOES</title>
+
+    <style>
+        .swiper {
+            width: 100%;
+            height: fit-content;
+        }
+
+        .swiper-slide {
+            height: fit-content;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="mb-3" style="">
+        <nav class="m-auto " style="width: 90%;padding: 1rem;max-width: 1440px;">
+            <div class="row align-items-center mt-3 mb-3">
+                <div class="col-5 col-lg-2">
+                    <a href=""> <img style="width: 100%;" src="./images/Layer 0 1.png" alt=""></a>
+                </div>
+                <div class="col-5 d-flex d-lg-none"></div>
+                <div class="col-8 col-lg-7 d-none d-lg-flex">
+                    <form role="search" class="m-0" style="width: 100%;">
+                        <div style="position: relative;">
+                            <button
+                                style="position: absolute; border: none; bottom: 25%; background: white;right: 8px;width: 25px;height: 25px;">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <input type="search" id="mySearch" name="q" placeholder=" جستجو برای محصولات "
+                                aria-label="      جستجو برای محصولات    " />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="d-none d-lg-flex justify-content-between col-3 pe-0"
+                    style="font-size: 14px;font-weight: 600;">
+
+                    <a class="product" href="">
+                        مقالات
+                    </a>
+                    <a class="product" href="">
+                        درباره ما
+                    </a>
+                    <a class="product" href="">
+                        تماس با ما
+                    </a>
+
+                </div>
+
+                <!-- offcanvas -->
+                <div class="d-flex d-lg-none col-2">
+                    <button class="btn " style="background-color: #00C2FF;" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                            class="bi bi-list fs-2 text-white"></i></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header mt-3">
+                            <div class="d-flex align-items-center">
+                                <a href="" class="ms-3">
+                                    <h5 id="offcanvasRightLabel" class="mb-0 sign-up">
+                                        ورود / ثبت نام
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <div class="shop-cart">
+                                        <i class="bi bi-cart3"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas"
+                                aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+
+                            <!-- search  -->
+                            <div>
+                                <form role="search" class="m-0">
+                                    <div style="position: relative;">
+                                        <button
+                                            style="position: absolute; border: none; bottom: 25%; background: white;right: 8px;width: 25px;height: 25px;">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                        <input type="search" id="mySearch" name="q" placeholder=" جستجو برای محصولات "
+                                            aria-label="      جستجو برای محصولات    " />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="category fs-6">
+
+                                <div style="display: flex; align-items: center;">
+                                    <i class="bi bi-house-door-fill ms-2" style="color: #00C2FF;"></i>
+                                    <a href="">
+                                        خانه
+                                    </a>
+                                </div>
+
+                                <!-- dropdown  -->
+                                <div class="btn-group dropstart">
+                                    <div style="display: flex; align-items: center;">
+                                        <i class="bi bi-caret-down-square-fill ms-2" style="color: #00C2FF;"></i>
+                                        <button type="button" class="btn btn-white category p-0 border-0"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            دسته بندی
+                                            <!-- <span class="dropdown-toggle ps-2"></span> -->
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                                            style=" direction: rtl; text-align: justify; margin: -40px;">
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    کفش مردانه
+                                                </a>
+                                            </li>
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    کتونی مردانه
+                                                </a>
+                                            </li>
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    کفش زنانه
+                                                </a>
+                                            </li>
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    کتونی زنانه
+                                                </a>
+                                            </li>
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    صندل
+                                                </a>
+                                            </li>
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    پوتین
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; align-items: center;">
+                                    <i class="bi bi-file-earmark-text-fill ms-2" style="color: #00C2FF;"></i>
+                                    <a href="">
+                                        مقالات
+                                    </a>
+                                </div>
+
+                                <div style="display: flex; align-items: center;">
+                                    <i class="bi bi-file-person-fill ms-2" style="color: #00C2FF;"></i>
+                                    <a href="">
+                                        درباره ما
+                                    </a>
+                                </div>
+
+                                <div style="display: flex; align-items: center;">
+                                    <i class="bi bi-telephone-inbound-fill ms-2" style="color: #00C2FF;"></i>
+                                    <a href="">
+                                        تماس با ما
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="m-auto " style="width: 90%;padding:0 1rem;">
+            <div class="row">
+
+                <div class="d-none d-lg-flex col-lg-6 justify-content-between category">
+
+                    <div>
+                        <a class="product" href=""> کفش مردانه </a>
+                    </div>
+
+                    <div>
+                        <a class="product" href=""> کتونی مردانه </a>
+                    </div>
+
+                    <div>
+                        <a class="product" href=""> کفش زنانه </a>
+                    </div>
+
+                    <div>
+                        <a class="product" href=""> کتونی زنانه </a>
+                    </div>
+
+                    <div>
+                        <a class="product" href=""> صندل </a>
+                    </div>
+
+                    <div>
+                        <a class="product" href=""> پوتین </a>
+                    </div>
+                </div>
+
+                <div class=" d-none d-lg-flex col-6" style="direction: ltr;">
+                    <div class="d-flex">
+                        <a href="">
+                            <div class="sign-up product"> ورود / ثبت نام </div>
+                        </a>
+                        <div class="shop-cart" style="width: 40px; height: 40px;">
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- blue baner  -->
+    <section>
+
+        <div>
+            <img width="100%" src="./images/banner.jpg" alt="">
+        </div>
+
+    </section>
+
+    <!-- category  -->
+    <section>
+        <div class="container mt-5" style="max-width: 1150px;">
+            <div class="d-flex flex-wrap justify-content-around justify-content-center">
+
+                <a class="m-4" href="">
+                    <div style="position: relative;">
+                        <div class="square">
+
+                        </div>
+
+
+                        <img style="z-index: 11;position: absolute;top: -60px;right: -50px;"
+                            src="./images/580b57fbd9996e24bc43bf4a 1.png" alt="">
+
+                    </div>
+
+                    <p class="text-center fw-bold mt-3 ">
+                        کفش مردانه
+                    </p>
+                </a>
+
+
+                <a class="m-4" href="">
+                    <div style="position: relative;">
+                        <div class="square">
+
+                        </div>
+
+
+                        <img style="z-index: 11;position: absolute;top: -30px;right: -20px;"
+                            src="./images/pngwing 1.png" alt="">
+
+                    </div>
+
+                    <p class="text-center fw-bold mt-3 ">
+                        کفش زنانه
+                    </p>
+                </a>
+
+
+                <a class="m-4" href="">
+                    <div style="position: relative;">
+                        <div class="square">
+
+                        </div>
+
+
+                        <img style="z-index: 11;position: absolute;top: -33px;right: -28px;"
+                            src="./images/pngwing 2.png" alt="">
+
+                    </div>
+
+                    <p class="text-center fw-bold mt-3 ">
+                        کتونی مردانه
+                    </p>
+                </a>
+
+
+                <a class="m-4" href="">
+                    <div style="position: relative;">
+                        <div class="square">
+
+                        </div>
+
+
+                        <img style="z-index: 11;position: absolute;top: -83px;right: -50px;"
+                            src="./images/pngegg (2) 1.png" alt="">
+
+                    </div>
+
+                    <p class="text-center fw-bold mt-3 ">
+                        کتونی زنانه
+                    </p>
+                </a>
+
+
+                <a class="m-4" href="">
+                    <div style="position: relative;">
+                        <div class="square">
+
+                        </div>
+
+
+                        <img style="z-index: 11;position: absolute;top: 4px;right: -20px;"
+                            src="./images/sandal-png-images-transparent-download-pngmartm-5 1.png" alt="">
+
+                    </div>
+
+                    <p class="text-center fw-bold mt-3 ">
+                        صندل
+                    </p>
+                </a>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- most seller  -->
+    <section>
+
+        <div class="container mt-5" style="max-width: 1150px;">
+
+            <div class="text-center mb-5">
+                <h2  style="font-size: 22px;font-weight: bold;">
+                    پرفروش‌ترین محصولات
+                </h2>
+
+            </div>
+
+
+
+            <!-- swiper -->
+            <div class="">
+
+                <div class="swiper mySwiper">
+                    <div class="d-flex flex-row justify-content-between swiper-wrapper pb-3">
+
+                        <div class="swiper-slide rounded-5 " style="width: fit-content;">
+                            <a href="">
+                                <div class="productbox">
+                                    <div style="position: relative;">
+                                        <div class="discount">
+                                            <p class="mb-0">
+                                                15%
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                        src="./images/Rectangle 38 (4).png" alt="">
+                                    <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                        <p> کتونی ایر جردن </p>
+                                    </div>
+                                    <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                        <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                        <p class="ms-2 mb-0"> 20,000تومان </p>
+                                        <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                    </div>
+                                    <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                        <div class="sizing mx-2">
+                                            <p class="mb-0"> 41 </p>
+                                        </div>
+                                        <div class="sizing mx-2">
+                                            <p class="mb-0"> 42 </p>
+                                        </div>
+                                        <div class="sizing mx-2">
+                                            <p class="mb-0"> 43 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+                                <div class="discount">
+                                    <p class="mb-0">
+                                        15%
+                                    </p>
+                                </div>
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (2).png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p> کتونی ایر جردن </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+                                <div class="discount">
+                                    <p class="mb-0">
+                                        15%
+                                    </p>
+                                </div>
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (3).png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p> کتونی ایر جردن </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+                                <div class="discount">
+                                    <p class="mb-0">
+                                        15%
+                                    </p>
+                                </div>
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (1).png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p> کتونی ایر جردن </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+                                <div class="discount">
+                                    <p class="mb-0">
+                                        15%
+                                    </p>
+                                </div>
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38.png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p> کتونی ایر جردن </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center; direction: ltr;">
+                <i class="bi bi-arrow-left-short me-1" style="color: #00C2FF;"></i>
+                <a style="color: #00C2FF;" href="">
+                    مشاهده همه
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- most discount  -->
+    <section>
+
+        <div class="container mt-5" style="max-width: 1150px;">
+
+            <div class="text-center mb-5">
+                <h2  style="font-size: 22px;font-weight: bold;">
+                    بیشترین تخفیف
+                </h2>
+
+            </div>
+
+
+
+            <!-- swiper -->
+            <div class="">
+
+
+                <div class="swiper mySwiper">
+
+
+
+
+                    <div class="d-flex flex-row justify-content-between swiper-wrapper pb-3">
+
+                        <div class="swiper-slide rounded-5 " style="width: fit-content;">
+                            <a href="">
+                                <div class="productbox">
+
+                                    <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                        src="./images/Rectangle 38 (4).png" alt="">
+                                    <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                        <p> کتونی ایر جردن </p>
+                                    </div>
+                                    <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                        <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                        <p class="ms-2 mb-0"> 20,000تومان </p>
+                                        <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                    </div>
+                                    <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                        <div class="sizing mx-2">
+                                            <p class="mb-0"> 41 </p>
+                                        </div>
+                                        <div class="sizing mx-2">
+                                            <p class="mb-0"> 42 </p>
+                                        </div>
+                                        <div class="sizing mx-2">
+                                            <p class="mb-0"> 43 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (2).png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p> کتونی ایر جردن </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (3).png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p>
+                                        کتونی ایر جردن
+                                    </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (1).png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p> کتونی ایر جردن </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38.png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p> کتونی ایر جردن </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="display: flex; align-items: center; direction: ltr;">
+                <i class="bi bi-arrow-left-short me-1" style="color: #00C2FF;"></i>
+                <a style="color: #00C2FF;" href="">
+                    مشاهده همه
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- baners-->
+    <section class="container my-5" style="max-width: 1150px;">
+
+
+        <div class="row">
+
+            <div class="col-lg-6 col-12 mb-3">
+                <div style="border: 3px solid #fff;border-radius: 15px;">
+                    <img style="width: 100% ; border-radius: 10px;" src="./images/Rectangle 34624175.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-12">
+                <div style="border: 3px solid #fff;border-radius: 15px;">
+                    <img style="width: 100% ; border-radius: 10px;" src="./images/Rectangle 34624174.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- most popular  -->
+    <section>
+
+        <div class="container mt-5" style="max-width: 1150px;">
+
+            <div class="text-center mb-5">
+                <h2  style="font-size: 22px;font-weight: bold;">
+                    محبوب ترین ها
+                </h2>
+
+            </div>
+
+
+
+            <!-- swiper -->
+            <div class="">
+
+
+                <div class="swiper mySwiper">
+
+
+
+
+                    <div class="d-flex flex-row justify-content-between swiper-wrapper pb-3">
+
+                        <div class="swiper-slide rounded-5 " style="width: fit-content;">
+                            <a href="">
+                                <div class="productbox">
+                                    <div class="discount">
+                                        <p class="mb-0">
+                                            15%
+                                        </p>
+                                    </div>
+                                    <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                        src="./images/Rectangle 38 (7).png" alt="">
+                                    <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                        <p> کتونی ایر جردن </p>
+                                    </div>
+                                    <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                        <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                        <p class="ms-2 mb-0"> 20,000تومان </p>
+                                        <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                    </div>
+                                    <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                        <div class="sizing mx-2">
+                                            <p class="mb-0"> 41 </p>
+                                        </div>
+                                        <div class="sizing mx-2">
+                                            <p class="mb-0"> 42 </p>
+                                        </div>
+                                        <div class="sizing mx-2">
+                                            <p class="mb-0"> 43 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+                                <div class="discount">
+                                    <p class="mb-0">
+                                        15%
+                                    </p>
+                                </div>
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (5).png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p> کتونی ایر جردن </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+                                <div class="discount">
+                                    <p class="mb-0">
+                                        15%
+                                    </p>
+                                </div>
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (12).png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p> کتونی ایر جردن </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+                                <div class="discount">
+                                    <p class="mb-0">
+                                        15%
+                                    </p>
+                                </div>
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (13).png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p> کتونی ایر جردن </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+                                <div class="discount">
+                                    <p class="mb-0">
+                                        15%
+                                    </p>
+                                </div>
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (14).png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p> کتونی ایر جردن </p>
+                                </div>
+                                <div class="d-flex  align-items-center mb-4" style="font-size: 14px; ">
+                                    <i class="bi bi-tag-fill mx-1" style="color: #00C2FF ;"></i>
+                                    <p class="ms-2 mb-0"> 20,000تومان </p>
+                                    <p class="text-decoration-line-through mb-0 text-black-50 mx-4"> 20,000 </p>
+                                </div>
+                                <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 41 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 42 </p>
+                                    </div>
+                                    <div class="sizing mx-2">
+                                        <p class="mb-0"> 43 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center; direction: ltr;">
+                <i class="bi bi-arrow-left-short me-1" style="color: #00C2FF;"></i>
+                <a style="color: #00C2FF;" href="">
+                    مشاهده همه
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- blog  -->
+    <section>
+
+        <div class="container mt-5" style="max-width: 1150px;">
+
+            <div class="text-center mb-5">
+                <h2  style="font-size: 22px;font-weight: bold;">
+                    وبلاگ
+                </h2>
+
+            </div>
+
+
+
+            <!-- swiper -->
+            <div class="">
+
+                <div class="swiper mySwiperBlog">
+
+
+
+                    <div class="d-flex flex-row justify-content-between swiper-wrapper pb-5">
+
+                        <div class="swiper-slide rounded-5 " style="width: fit-content;">
+
+                            <div class="productbox">
+
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (16).png" alt="">
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p>
+                                        ایر جردن در طرح‌های جدید عرضه می‌شود
+                                    </p>
+                                </div>
+                                <div style="font-size: 12px; font-weight: 500; text-align: justify;">
+
+                                    <p>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                                        تنوع با هدف بهبود.
+                                    </p>
+                                </div>
+                                <div>
+                                    <a style="color: #00C2FF;font-size: 16px;" href="">مشاهده بیشتر </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="swiper-slide rounded-5">
+
+                            <div class="productbox">
+
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (15).png" alt="">
+
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+                                    <p>
+                                        ایر جردن در طرح‌های جدید عرضه می‌شود
+                                    </p>
+                                </div>
+
+                                <div style="font-size: 12px; font-weight: 500; text-align: justify;">
+
+                                    <p>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                                        تنوع با هدف بهبود.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <a style="color: #00C2FF;font-size: 16px;" href="">مشاهده بیشتر </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="swiper-slide rounded-5">
+
+                            <div class="productbox">
+
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (18).png" alt="">
+
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+
+                                    <p>
+                                        ایر جردن در طرح‌های جدید عرضه می‌شود
+                                    </p>
+
+                                </div>
+
+                                <div style="font-size: 12px; font-weight: 500; text-align: justify;">
+
+                                    <p>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+                                        ازطراحانگرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
+                                        بهبودتنوع با هدف بهبود.
+                                    </p>
+
+                                </div>
+
+                                <div>
+                                    <a style="color: #00C2FF;font-size: 16px;" href="">مشاهده بیشتر </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="swiper-slide rounded-5">
+                            <div class="productbox">
+
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (17).png" alt="">
+
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+
+                                    <p>
+                                        ایر جردن در طرح‌های جدید عرضه می‌شود
+                                    </p>
+
+                                </div>
+                                <div style="font-size: 12px; font-weight: 500; text-align: justify;">
+
+                                    <p>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده ازطراحان
+                                        گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                                        و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود تنوع با هدف
+                                        بهبود.
+                                    </p>
+
+                                </div>
+
+                                <div>
+                                    <a style="color: #00C2FF;font-size: 16px;" href="">مشاهده بیشتر </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="swiper-slide rounded-5">
+
+                            <div class="productbox">
+
+                                <img style="width: 100%; height: 170px ;border-radius: 10px;"
+                                    src="./images/Rectangle 38 (14).png" alt="">
+
+                                <div style="font-size: 16px;" class="d-flex justify-content-between fw-bold mt-3">
+
+                                    <p>
+                                        ایر جردن در طرح‌های جدید عرضه می‌شود
+                                    </p>
+
+                                </div>
+
+                                <div style="font-size: 12px; font-weight: 500; text-align: justify;">
+
+                                    <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده ازطراحان
+                                        گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                                        و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود تنوع با هدف
+                                        بهبود.
+                                    </p>
+
+                                </div>
+
+                                <div>
+                                    <a style="color: #00C2FF; font-size: 16px;" href="">مشاهده بیشتر </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer style="border-top: 2px solid #e7e4e4;">
+        <div class="container" style="max-width: 1150px;">
+            <div class="row mt-5">
+
+                <div class="col-lg-2 mb-5">
+                    <h5 class="footer-title">
+                        لینک‌های مفید
+                    </h5>
+                    <div class="d-flex flex-column footerline">
+                        <div>
+                            <i class="bi bi-circle-fill dot"></i>
+                            <a class="footer-links" href="">
+                                درباره ما
+                            </a>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-circle-fill dot"></i>
+                            <a class="footer-links" href="">
+                                تماس با ما
+                            </a>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-circle-fill dot"></i>
+                            <a class="footer-links" href="">
+                                قوانین مقررات
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 mb-5">
+                    <div class="">
+                        <h4 class="footer-title text-center">
+                            با ثبت ایمیل خود از اخبار و تخیفیف‌های ما با خبر باشید
+                        </h4>
+
+                        <form>
+                            <div class="d-flex justify-content-center mt-4">
+                                <input type="text" id="uname" name="name" placeholder="  ایمیل" size="30" />
+                            </div>
+                            <div class="mt-4 text-center">
+                                <button class="send-btn">
+                                    ارسال
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 mb-5">
+                    <div>
+                        <div class=" text-center mb-4">
+                            <img src="./images/Layer 0 1.png" alt="">
+                        </div>
+                        <p style="text-align: justify; line-height: 30px;">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!--swiper java script codes -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- products -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // slidesPerView: 4,
+            //   centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            slidesPerView: 1.2,
+            breakpoints: {
+                375: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 40,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 50,
+                },
+                1440: {
+                    slidesPerView: 4.5,
+                    spaceBetween: 50,
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <!-- blog -->
+    <script>
+        var swiper = new Swiper(".mySwiperBlog", {
+            // slidesPerView: 4,
+            //   centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            slidesPerView: 1.2,
+            breakpoints: {
+                375: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 40,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 50,
+                },
+                1440: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 50,
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+
+    <script>
+        const swiper = new Swiper('.sample-slider', {
+            loop: true,
+        })
+    </script>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="./bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

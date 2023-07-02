@@ -1,0 +1,1120 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./shop.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="mb-3">
+        <nav class="m-auto " style="width: 90%;padding: 1rem;">
+            <div class="row align-items-center mt-3 mb-3">
+
+                <div class="col-5 col-lg-2">
+                    <a href=""> <img style="width: 100%;" src="./images/Layer 0 1.png" alt=""></a>
+                </div>
+
+                <div class="col-5 d-flex d-lg-none"></div>
+
+                <div class="col-8 col-lg-7 d-none d-lg-flex">
+                    <form role="search" class="m-0" style="width: 100%;">
+                        <div style="position: relative;">
+                            <button
+                                style="position: absolute; border: none; bottom: 25%; background: white;right: 8px;width: 25px;height: 25px;">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <input type="search" id="mySearch" name="q" placeholder=" جستجو برای محصولات "
+                                aria-label="      جستجو برای محصولات    " />
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="d-none d-lg-flex justify-content-between col-3 pe-0"
+                    style="font-size: 14px;font-weight: 600;">
+
+                    <a class="product" href="">
+                        مقالات
+                    </a>
+                    <a class="product" href="">
+                        درباره ما
+                    </a>
+                    <a class="product" href="">
+                        تماس با ما
+                    </a>
+
+                </div>
+
+                <!-- offcanvas -->
+                <div class="d-flex d-lg-none col-2">
+                    <button class="btn " style="background-color: #00C2FF;" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                            class="bi bi-list fs-2 text-white"></i></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header mt-3">
+                            <div class="d-flex align-items-center">
+                                <a href="" class="ms-3">
+                                    <h5 id="offcanvasRightLabel" class="mb-0 sign-up">
+                                        ورود / ثبت نام
+                                    </h5>
+                                </a>
+                                <a href="">
+                                    <div class="shop-cart">
+                                        <i class="bi bi-cart3"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas"
+                                aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+
+
+                            <div>
+                                <form role="search" class="m-0">
+                                    <div style="position: relative;">
+                                        <button
+                                            style="position: absolute; border: none; bottom: 25%; background: white;right: 8px;width: 25px;height: 25px;">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                        <input type="search" id="mySearch" name="q" placeholder=" جستجو برای محصولات "
+                                            aria-label="      جستجو برای محصولات    " />
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- dropdown  -->
+                            <div class="category fs-6">
+
+                                <div style="display: flex; align-items: center;">
+                                    <i class="bi bi-house-door-fill ms-2" style="color: #00C2FF;"></i>
+                                    <a href="">
+                                        خانه
+                                    </a>
+                                </div>
+
+                                <div class="btn-group dropstart">
+                                    <div style="display: flex; align-items: center;">
+                                        <i class="bi bi-caret-down-square-fill ms-2" style="color: #00C2FF;"></i>
+                                        <button type="button" class="btn btn-white category p-0 border-0"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            دسته بندی
+                                            <!-- <span class="dropdown-toggle ps-2"></span> -->
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                                            style=" direction: rtl; text-align: justify; margin: -40px;">
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    کفش مردانه
+                                                </a>
+                                            </li>
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    کتونی مردانه
+                                                </a>
+                                            </li>
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    کفش زنانه
+                                                </a>
+                                            </li>
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    کتونی زنانه
+                                                </a>
+                                            </li>
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    صندل
+                                                </a>
+                                            </li>
+                                            <li style="display: flex; align-items: center;">
+                                                <i class="bi bi-circle-fill dot"></i>
+                                                <a class="dropdown-item" href="#">
+                                                    پوتین
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; align-items: center;">
+                                    <i class="bi bi-file-earmark-text-fill ms-2" style="color: #00C2FF;"></i>
+                                    <a href="">
+                                        مقالات
+                                    </a>
+                                </div>
+
+                                <div style="display: flex; align-items: center;">
+                                    <i class="bi bi-file-person-fill ms-2" style="color: #00C2FF;"></i>
+                                    <a href="">
+                                        درباره ما
+                                    </a>
+                                </div>
+
+                                <div style="display: flex; align-items: center;">
+                                    <i class="bi bi-telephone-inbound-fill ms-2" style="color: #00C2FF;"></i>
+                                    <a href="">
+                                        تماس با ما
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="m-auto " style="width: 90%;padding:0 1rem; border-bottom: 1px solid #c7c4c4;">
+            <div class="row">
+
+                <div class="d-none d-lg-flex col-lg-6 justify-content-between category">
+
+                    <div>
+                        <a class="product" href=""> کفش مردانه </a>
+                    </div>
+
+                    <div>
+                        <a class="product" href=""> کتونی مردانه </a>
+                    </div>
+
+                    <div>
+                        <a class="product" href=""> کفش زنانه </a>
+                    </div>
+
+                    <div>
+                        <a class="product" href=""> کتونی زنانه </a>
+                    </div>
+
+                    <div>
+                        <a class="product" href=""> صندل </a>
+                    </div>
+
+                    <div>
+                        <a class="product" href=""> پوتین </a>
+                    </div>
+                </div>
+
+                <div class=" d-none d-lg-flex col-6" style="direction: ltr;">
+                    <div class="d-flex">
+                        <a href="">
+                            <div class="sign-up product"> ورود / ثبت نام </div>
+                        </a>
+                        <div class="shop-cart" style="width: 40px; height: 40px;">
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+
+
+    <section>
+        <div class="container mt-5" style="max-width: 1150px;">
+
+            <div class="row">
+                <div class="col-3 d-flex d-lg-none">
+
+                    <!-- offcanvas (down) -->
+                    <div>
+                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                            aria-controls="offcanvasBottom">
+                            <i class="bi bi-filter-circle-fill fs-1" style="color: #00C2FF;"></i>
+                        </button>
+
+                        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+                            style="height: fit-content;" aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">
+                                </button>
+                            </div>
+
+                            <div class="offcanvas-body">
+                                <form action="">
+
+                                    <div>
+                                        <!-- side bar (categories) -->
+                                        <div class="border-bottom" style="">
+                                            <h5 class="mb-4">
+                                                دسته‌بندی ها
+                                            </h5>
+                                            <div class="btn-group btn-group-toggle justify-content-between "
+                                                data-toggle="buttons">
+
+                                                <div class="btn-group flex-wrap d-flex justify-content-center"
+                                                    style="padding: 20px;">
+                                                    <input type="radio"
+                                                        class="btn-check choice-option border-2 rounded-1 p-0"
+                                                        name="options" id="option8" autocomplete="off" checked />
+                                                    <label class="btn choice-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option8">
+                                                        همه
+                                                    </label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option9"
+                                                        autocomplete="off" />
+                                                    <label class="btn choice-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option9">
+                                                        کفش مردانه
+                                                    </label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option10"
+                                                        autocomplete="off" />
+                                                    <label class="btn choice-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option10">
+                                                        کفش زنانه
+                                                    </label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option11"
+                                                        autocomplete="off" />
+                                                    <label class="btn choice-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option11">
+                                                        کتونی مردانه
+                                                    </label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option12"
+                                                        autocomplete="off" />
+                                                    <label class="btn choice-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option12">
+                                                        کتونی زنانه
+                                                    </label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option13"
+                                                        autocomplete="off" />
+                                                    <label class="btn choice-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option14">
+                                                        صندل
+                                                    </label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option15"
+                                                        autocomplete="off" />
+                                                    <label class="btn choice-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option15">
+                                                        پوتین
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <!-- side bar (sizes) -->
+                                        <div class="border-bottom">
+                                            <h5 style=" margin-top: 30px;">
+                                                سایز
+                                            </h5>
+
+                                            <div class="btn-group btn-group-toggle justify-content-between d-flex"
+                                                data-toggle="buttons">
+
+                                                <div class="btn-group flex-wrap d-flex justify-content-center"
+                                                    style="padding: 20px;">
+                                                    <input type="radio"
+                                                        class="btn-check sizing-option border-2 rounded-1 p-0"
+                                                        name="options" id="option1" autocomplete="off" checked />
+                                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option1">37</label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option2"
+                                                        autocomplete="off" />
+                                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option2">38</label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option3"
+                                                        autocomplete="off" />
+                                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option3">39</label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option4"
+                                                        autocomplete="off" />
+                                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option4">40</label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option5"
+                                                        autocomplete="off" />
+                                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option5">41</label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option6"
+                                                        autocomplete="off" />
+                                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option6">42</label>
+
+                                                    <input type="radio" class="btn-check" name="options" id="option7"
+                                                        autocomplete="off" />
+                                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0"
+                                                        style="flex-grow: 0;" for="option7">43</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <!-- side bar (brands) -->
+                                        <div class="mt-4">
+                                            <h5 class="mb-4">
+                                                برند
+                                            </h5>
+                                            <div style="margin-top: 1rem  ;display: flex;">
+                                                <div class=" ms-4">
+                                                    <input class="form-check-input position-static mb-4" type="checkbox"
+                                                        id="blankCheckbox" value="option1" aria-label="آدیدس ">
+                                                    آدیدس
+                                                </div>
+                                                <div class=" ms-4">
+                                                    <input class="form-check-input position-static mb-4" type="checkbox"
+                                                        id="blankCheckbox" value="option1" aria-label="نایکی">
+                                                    نایکی
+                                                </div>
+                                                <div class=" ms-4">
+                                                    <input class="form-check-input position-static mb-4" type="checkbox"
+                                                        id="blankCheckbox" value="option1" aria-label="پوما">
+                                                    پوما
+                                                </div>
+                                                <div class=" ms-4">
+                                                    <input class="form-check-input position-static mb-4" type="checkbox"
+                                                        id="blankCheckbox" value="option1" aria-label="بالنسیاگا">
+                                                    بالنسیاگا
+                                                </div>
+                                                <div class=" ms-4">
+                                                    <input class="form-check-input position-static mb-4" type="checkbox"
+                                                        id="blankCheckbox" value="option1" aria-label="سالومون">
+                                                    سالومون
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div style="direction: ltr;">
+                                        <button type="submit" class="btn" style="background: #00C2FF;color: white;">
+                                            اعمال فیلتر
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class=" col-9">
+                    <!-- Default dropstart button -->
+                    <div class="">
+                        <div class="dropdown d-flex d-lg-none" style="direction: rtl; margin-bottom: 3rem; ;">
+                            <button type="button" class="btn btn-white border-0 p-0" data-bs-toggle="dropdown"
+                                style="font-weight: bold; font-size: 18px;" aria-expanded="false">
+                                مرتب سازی:
+                                <span class="dropdown-toggle ps-2"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2"
+                                style=" direction: rtl; text-align: justify;line-height: 30px;">
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        پرتخفیف ترین
+                                    </button>
+                                </li>
+
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        جدیدترین
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        پر فروش ترین
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        ارزان ترین
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        گران ترین
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="d-none d-lg-flex flex-wrap"
+                        style="font-weight: 500;margin-right: 13rem;width: 100%; margin-bottom: 1rem;">
+                        <p class="me-5 fw-bold">
+                            مرتب سازی:
+                        </p>
+                        <a class="me-5 sort" href="">
+                            پرتخفیف ترین
+                        </a>
+                        <a class="me-5 sort" href="">
+                            جدیدترین
+                        </a>
+                        <a class="me-5 sort" href="">
+                            پر فروش ترین
+                        </a>
+                        <a class="me-5 sort" href="">
+                            ارزان ترین
+                        </a>
+                        <a class="me-5 sort" href="">
+                            گران ترین
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+                <!-- side bar -->
+                <div class="col-lg-3 d-none d-lg-flex">
+
+                    <form action="">
+
+                        <!-- side bar (categories) -->
+                        <div class="border-bottom" style="">
+                            <h5 class="mb-4">
+                                دسته‌بندی ها
+                            </h5>
+                            <select class="custom-select border-0"
+                                style="height:300px;line-height: 70px;margin:1rem 3rem 0 0;" multiple>
+                                <option selected style="margin-bottom: 0.7rem;">
+                                    همه
+                                </option>
+                                <option value="1" style="margin-bottom: 0.7rem;">
+                                    کفش مردانه
+                                </option>
+                                <option value="2" style="margin-bottom: 0.7rem;">
+                                    کفش زنانه
+                                </option>
+                                <option value="3" style="margin-bottom: 0.7rem;">
+                                    کتونی مردانه
+                                </option>
+                                <option value="4" style="margin-bottom: 0.7rem;">
+                                    کتونی زنانه
+                                </option>
+                                <option value="5" style="margin-bottom: 0.7rem;">
+                                    صندل
+                                </option>
+                                <option value="6" style="margin-bottom: 0.7rem;">
+                                    پوتین
+                                </option>
+                            </select>
+
+                        </div>
+
+
+                        <!-- side bar (sizes) -->
+                        <div class="border-bottom">
+                            <h5 style=" margin-top: 30px;">
+                                سایز
+                            </h5>
+
+                            <div class="btn-group btn-group-toggle justify-content-between " data-toggle="buttons">
+
+                                <div class="btn-group flex-wrap d-flex justify-content-center" style="padding: 20px;">
+                                    <input type="radio" class="btn-check sizing-option border-2 rounded-1 p-0"
+                                        name="options" id="option1" autocomplete="off" checked />
+                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0" style="flex-grow: 0;"
+                                        for="option1">37</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="option2"
+                                        autocomplete="off" />
+                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0" style="flex-grow: 0;"
+                                        for="option2">38</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="option3"
+                                        autocomplete="off" />
+                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0" style="flex-grow: 0;"
+                                        for="option3">39</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="option4"
+                                        autocomplete="off" />
+                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0" style="flex-grow: 0;"
+                                        for="option4">40</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="option5"
+                                        autocomplete="off" />
+                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0" style="flex-grow: 0;"
+                                        for="option5">41</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="option6"
+                                        autocomplete="off" />
+                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0" style="flex-grow: 0;"
+                                        for="option6">42</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="option7"
+                                        autocomplete="off" />
+                                    <label class="btn sizing-option me-3 border-2 rounded-1 p-0" style="flex-grow: 0;"
+                                        for="option7">43</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- side bar (brands) -->
+                        <div class="mt-4">
+                            <h5 class="mb-4">
+                                برند
+                            </h5>
+                            <div style="margin: 1rem 3rem 0 0 ;">
+                                <div>
+                                    <input class="form-check-input position-static mb-4" type="checkbox"
+                                        id="blankCheckbox" value="option1" aria-label="آدیدس ">
+                                    آدیدس
+                                </div>
+                                <div>
+                                    <input class="form-check-input position-static mb-4" type="checkbox"
+                                        id="blankCheckbox" value="option1" aria-label="نایکی">
+                                    نایکی
+                                </div>
+                                <div>
+                                    <input class="form-check-input position-static mb-4" type="checkbox"
+                                        id="blankCheckbox" value="option1" aria-label="پوما">
+                                    پوما
+                                </div>
+                                <div>
+                                    <input class="form-check-input position-static mb-4" type="checkbox"
+                                        id="blankCheckbox" value="option1" aria-label="بالنسیاگا">
+                                    بالنسیاگا
+                                </div>
+                                <div>
+                                    <input class="form-check-input position-static mb-4" type="checkbox"
+                                        id="blankCheckbox" value="option1" aria-label="سالومون">
+                                    سالومون
+                                </div>
+                            </div>
+                        </div>
+                        <div style="direction: ltr;">
+                            <button type="submit" class="btn" style="background: #00C2FF;color: white;">
+                                اعمال فیلتر
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+
+                <!-- cards  -->
+                <div class="col-lg-9 d-flex flex-wrap justify-content-between">
+
+
+
+
+                    <div class="card shop-card" style="width: 12rem; margin-bottom: 2rem;">
+                        <div style="position: relative;">
+                            <div class="discount">
+                                <p class="mb-0">
+                                    15%
+                                </p>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="./images/Rectangle 38 (1).png" alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title mt-1">
+                                کتونی ایر جردن
+                            </h5>
+                            <p class="card-text">
+                            <div class="d-flex  align-items-center mb-4" style="font-size: 14px;font-weight: bold; ">
+                                <i class="bi bi-tag-fill mx-1" style="color: #00C2FF;"></i>
+                                <p class="ms-2 mb-0"> 20,000تومان </p>
+                                <p class="text-decoration-line-through mb-0 text-black-50 mx-2"> 20,000 </p>
+                            </div>
+                            </p>
+                            <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 41 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 42 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 43 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shop-card" style="width: 12rem; margin-bottom: 2rem;">
+                        <div style="position: relative;">
+                            <div class="discount">
+                                <p class="mb-0">
+                                    15%
+                                </p>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="./images/Rectangle 38 (1).png" alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title mt-1">
+                                کتونی ایر جردن
+                            </h5>
+                            <p class="card-text">
+                            <div class="d-flex  align-items-center mb-4" style="font-size: 14px;font-weight: bold; ">
+                                <i class="bi bi-tag-fill mx-1" style="color: #00C2FF;"></i>
+                                <p class="ms-2 mb-0"> 20,000تومان </p>
+                                <p class="text-decoration-line-through mb-0 text-black-50 mx-2"> 20,000 </p>
+                            </div>
+                            </p>
+                            <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 41 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 42 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 43 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shop-card" style="width: 12rem; margin-bottom: 2rem;">
+                        <div style="position: relative;">
+                            <div class="discount">
+                                <p class="mb-0">
+                                    15%
+                                </p>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="./images/Rectangle 38 (1).png" alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title mt-1">
+                                کتونی ایر جردن
+                            </h5>
+                            <p class="card-text">
+                            <div class="d-flex  align-items-center mb-4" style="font-size: 14px;font-weight: bold; ">
+                                <i class="bi bi-tag-fill mx-1" style="color: #00C2FF;"></i>
+                                <p class="ms-2 mb-0"> 20,000تومان </p>
+                                <p class="text-decoration-line-through mb-0 text-black-50 mx-2"> 20,000 </p>
+                            </div>
+                            </p>
+                            <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 41 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 42 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 43 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shop-card" style="width: 12rem; margin-bottom: 2rem;">
+                        <div style="position: relative;">
+                            <div class="discount">
+                                <p class="mb-0">
+                                    15%
+                                </p>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="./images/Rectangle 38 (1).png" alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title mt-1">
+                                کتونی ایر جردن
+                            </h5>
+                            <p class="card-text">
+                            <div class="d-flex  align-items-center mb-4" style="font-size: 14px;font-weight: bold; ">
+                                <i class="bi bi-tag-fill mx-1" style="color: #00C2FF;"></i>
+                                <p class="ms-2 mb-0"> 20,000تومان </p>
+                                <p class="text-decoration-line-through mb-0 text-black-50 mx-2"> 20,000 </p>
+                            </div>
+                            </p>
+                            <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 41 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 42 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 43 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shop-card" style="width: 12rem; margin-bottom: 2rem;">
+                        <div style="position: relative;">
+                            <div class="discount">
+                                <p class="mb-0">
+                                    15%
+                                </p>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="./images/Rectangle 38 (1).png" alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title mt-1">
+                                کتونی ایر جردن
+                            </h5>
+                            <p class="card-text">
+                            <div class="d-flex  align-items-center mb-4" style="font-size: 14px;font-weight: bold; ">
+                                <i class="bi bi-tag-fill mx-1" style="color: #00C2FF;"></i>
+                                <p class="ms-2 mb-0"> 20,000تومان </p>
+                                <p class="text-decoration-line-through mb-0 text-black-50 mx-2"> 20,000 </p>
+                            </div>
+                            </p>
+                            <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 41 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 42 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 43 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shop-card" style="width: 12rem; margin-bottom: 2rem;">
+                        <div style="position: relative;">
+                            <div class="discount">
+                                <p class="mb-0">
+                                    15%
+                                </p>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="./images/Rectangle 38 (1).png" alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title mt-1">
+                                کتونی ایر جردن
+                            </h5>
+                            <p class="card-text">
+                            <div class="d-flex  align-items-center mb-4" style="font-size: 14px;font-weight: bold; ">
+                                <i class="bi bi-tag-fill mx-1" style="color: #00C2FF;"></i>
+                                <p class="ms-2 mb-0"> 20,000تومان </p>
+                                <p class="text-decoration-line-through mb-0 text-black-50 mx-2"> 20,000 </p>
+                            </div>
+                            </p>
+                            <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 41 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 42 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 43 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shop-card" style="width: 12rem; margin-bottom: 2rem;">
+                        <div style="position: relative;">
+                            <div class="discount">
+                                <p class="mb-0">
+                                    15%
+                                </p>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="./images/Rectangle 38 (1).png" alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title mt-1">
+                                کتونی ایر جردن
+                            </h5>
+                            <p class="card-text">
+                            <div class="d-flex  align-items-center mb-4" style="font-size: 14px;font-weight: bold; ">
+                                <i class="bi bi-tag-fill mx-1" style="color: #00C2FF;"></i>
+                                <p class="ms-2 mb-0"> 20,000تومان </p>
+                                <p class="text-decoration-line-through mb-0 text-black-50 mx-2"> 20,000 </p>
+                            </div>
+                            </p>
+                            <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 41 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 42 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 43 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shop-card" style="width: 12rem; margin-bottom: 2rem;">
+                        <div style="position: relative;">
+                            <div class="discount">
+                                <p class="mb-0">
+                                    15%
+                                </p>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="./images/Rectangle 38 (1).png" alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title mt-1">
+                                کتونی ایر جردن
+                            </h5>
+                            <p class="card-text">
+                            <div class="d-flex  align-items-center mb-4" style="font-size: 14px;font-weight: bold; ">
+                                <i class="bi bi-tag-fill mx-1" style="color: #00C2FF;"></i>
+                                <p class="ms-2 mb-0"> 20,000تومان </p>
+                                <p class="text-decoration-line-through mb-0 text-black-50 mx-2"> 20,000 </p>
+                            </div>
+                            </p>
+                            <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 41 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 42 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 43 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shop-card" style="width: 12rem; margin-bottom: 2rem;">
+                        <div style="position: relative;">
+                            <div class="discount">
+                                <p class="mb-0">
+                                    15%
+                                </p>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="./images/Rectangle 38 (1).png" alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title mt-1">
+                                کتونی ایر جردن
+                            </h5>
+                            <p class="card-text">
+                            <div class="d-flex  align-items-center mb-4" style="font-size: 14px;font-weight: bold; ">
+                                <i class="bi bi-tag-fill mx-1" style="color: #00C2FF;"></i>
+                                <p class="ms-2 mb-0"> 20,000تومان </p>
+                                <p class="text-decoration-line-through mb-0 text-black-50 mx-2"> 20,000 </p>
+                            </div>
+                            </p>
+                            <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 41 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 42 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 43 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shop-card" style="width: 12rem; margin-bottom: 2rem;">
+                        <div style="position: relative;">
+                            <div class="discount">
+                                <p class="mb-0">
+                                    15%
+                                </p>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="./images/Rectangle 38 (1).png" alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title mt-1">
+                                کتونی ایر جردن
+                            </h5>
+                            <p class="card-text">
+                            <div class="d-flex  align-items-center mb-4" style="font-size: 14px;font-weight: bold; ">
+                                <i class="bi bi-tag-fill mx-1" style="color: #00C2FF;"></i>
+                                <p class="ms-2 mb-0"> 20,000تومان </p>
+                                <p class="text-decoration-line-through mb-0 text-black-50 mx-2"> 20,000 </p>
+                            </div>
+                            </p>
+                            <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 41 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 42 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 43 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shop-card" style="width: 12rem; margin-bottom: 2rem;">
+                        <div style="position: relative;">
+                            <div class="discount">
+                                <p class="mb-0">
+                                    15%
+                                </p>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="./images/Rectangle 38 (1).png" alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title mt-1">
+                                کتونی ایر جردن
+                            </h5>
+                            <p class="card-text">
+                            <div class="d-flex  align-items-center mb-4" style="font-size: 14px;font-weight: bold; ">
+                                <i class="bi bi-tag-fill mx-1" style="color: #00C2FF;"></i>
+                                <p class="ms-2 mb-0"> 20,000تومان </p>
+                                <p class="text-decoration-line-through mb-0 text-black-50 mx-2"> 20,000 </p>
+                            </div>
+                            </p>
+                            <div class="d-flex align-content-center fs-6 text-muted justify-content-center">
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 41 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 42 </p>
+                                </div>
+                                <div class="sizing mx-2">
+                                    <p class="mb-0"> 43 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- pagination  -->
+        <div style="direction: ltr;margin: 50px 0; ">
+            <nav aria-label="Page navigation example" class="">
+                <ul class="pagination justify-content-center ">
+                    <div class="d-flex pagebox">
+                        <li class="page-item disabled">
+                            <a class="page-link text-black-50 previous-next" style=" color: #00C2FF;"> صفحه قبل </a>
+                        </li>
+                        <li class="page-item"><a style="background-color: #00C2FF;" class="page-link text-black-50"
+                                href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-black-50" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-black-50" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link text-black-50 previous-next" style=" color: #00C2FF;" href="#"> صفحه بعد
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer style="border-top: 2px solid #e7e4e4;">
+        <div class="container" style="max-width: 1150px;">
+            <div class="row mt-5">
+
+                <div class="col-lg-2 mb-5">
+                    <h5 class="footer-title">
+                        لینک‌های مفید
+                    </h5>
+                    <div class="d-flex flex-column footerline">
+                        <div>
+                            <i class="bi bi-circle-fill dot"></i>
+                            <a class="footer-links" href="">
+                                درباره ما
+                            </a>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-circle-fill dot"></i>
+                            <a class="footer-links" href="">
+                                تماس با ما
+                            </a>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-circle-fill dot"></i>
+                            <a class="footer-links" href="">
+                                قوانین مقررات
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 mb-5">
+                    <div class="">
+                        <h4 class="footer-title text-center">
+                            با ثبت ایمیل خود از اخبار و تخیفیف‌های ما با خبر باشید
+                        </h4>
+
+                        <form>
+                            <div class="d-flex justify-content-center mt-4">
+                                <input type="text" id="uname" name="name" placeholder="  ایمیل" size="30" />
+                            </div>
+                            <div class="mt-4 text-center">
+                                <button class="send-btn">
+                                    ارسال
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 mb-5">
+                    <div>
+                        <div class=" text-center mb-4">
+                            <img src="./images/Layer 0 1.png" alt="">
+                        </div>
+                        <p style="text-align: justify; line-height: 30px;">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
